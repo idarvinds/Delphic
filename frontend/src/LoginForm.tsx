@@ -1,21 +1,18 @@
 import axios from "axios";
 import { useState } from "react";
 import {
-    Avatar,
     Box,
   Button,
   Card,
   CardActions,
   CardContent,
   Container,
-  Divider,
   TextField,
   Typography,
   CircularProgress,
   styled,
 } from "@mui/material";
 
-import os_logo from './assets/os_legal_128.png';
 
 interface LoginResponse {
   access: string;
@@ -31,15 +28,6 @@ const CardWrapper = styled(Card)({
   margin:"0px",
   padding: 16,
 });
-
-const ImageWrapper = styled(Avatar)({
-    width: 100,
-    height: 100,
-    margin: '0 auto',
-    marginBottom: 16,
-    padding: 20,
-    background: '#a4a0a0'
-  });
 
 const TextFieldWrapper = styled(TextField)({
   marginBottom: 16,
@@ -103,13 +91,6 @@ export const LoginForm = ({ onLogin }: LoginFormProps) => {
           <Typography variant="h5" component="h1" align="center">
             Login
           </Typography>
-          <ImageWrapper
-            src={os_logo}
-            alt="Your image"
-            variant="rounded"
-
-          />
-          <Divider />
           <Box sx={{ marginTop: 2 }}>
           <TextFieldWrapper
             label="Username"

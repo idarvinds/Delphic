@@ -171,36 +171,6 @@ export default function DrawerLayout2(props: Props) {
         ) : (
           <></>
         )}
-        <ListItem key="GitHub" disablePadding>
-          <ListItemButton
-            onClick={() =>
-              window.open(
-                "https://github.com/JSv4/Delphic",
-                "_blank",
-                "noreferrer"
-              )
-            }
-          >
-            <ListItemIcon>
-              <GitHubIcon />
-            </ListItemIcon>
-            <ListItemText primary="GitHub" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem key="OpenSource Legal" disablePadding>
-          <ListItemButton
-            onClick={() =>
-              window.open("https://opensource.legal", "_blank", "noreferrer")
-            }
-          >
-            <ListItemIcon>
-              <ListItemAvatar>
-                <Avatar src={os_logo} />
-              </ListItemAvatar>
-            </ListItemIcon>
-            <ListItemText primary="OpenSource Legal" />
-          </ListItemButton>
-        </ListItem>
       </List>
     </div>
   );
