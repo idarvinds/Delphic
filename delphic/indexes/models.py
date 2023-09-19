@@ -35,3 +35,15 @@ class Collection(models.Model):
 
     def __str__(self):
         return self.title
+
+
+# class Chat(models.Model):
+#     collection = models.ForeignKey(
+#         "Collection", related_name="documents", on_delete=models.CASCADE
+#     )
+#     user = models.ForeignKey(
+#         "User", related_name="chats", on_delete=models.CASCADE
+#     )
+#     chat = models.TextField()
+#     created = models.DateTimeField(auto_now_add=True)
+#     modified = models.DateTimeField(auto_now=True)
